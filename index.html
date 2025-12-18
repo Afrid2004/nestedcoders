@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coders Cursor | Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea, #764ba2, #f7971e);
+      background-size: 300% 300%;
+      animation: gradientBG 8s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      padding: 50px 35px;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    h1 span {
+      color: #ffd86b;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .divider {
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(to right, #ffd86b, #ff8c00);
+      margin: 0 auto 30px;
+      border-radius: 5px;
+    }
+
+    .footer {
+      font-size: 0.8rem;
+      opacity: 0.85;
+      margin-top: 20px;
+    }
+
+    .pulse {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 1.1rem;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.75; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 40px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Coders <span>Cursor</span></h1>
+    <div class="divider"></div>
+    <p class="tagline">Where Code Meets Creativity</p>
+    <p>We are working hard to build something amazing for developers and learners.</p>
+    <div class="pulse">🚀 Coming Soon</div>
+    <div class="footer">Stay tuned for updates</div>
+  </div>
+
+</body>
+</html>
